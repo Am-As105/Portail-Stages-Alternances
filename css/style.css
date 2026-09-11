@@ -580,6 +580,25 @@ input {
     }
 }
 
+.btn-three-dots {
+    width: 28px;
+    height: 28px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    color: #a0a0a0;
+    border: 1px solid #222222;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-three-dots:hover {
+    background-color: #161616;
+    color: #ffffff;
+    border-color: #444444;
+}
 @media (max-width: 768px) {
     .header-inner {
         flex-wrap: wrap;
@@ -626,3 +645,28 @@ input {
     }
 }
 
+.mobile-menu-btn {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .main-nav,
+    .site-header > .btn-primary {
+        display: none;
+    }
+
+    .mobile-menu-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: transparent;
+        border: none;
+        color: var(--color-text-main);
+        cursor: pointer;
+        padding: 4px;
+    }
+
+    .header-inner {
+        justify-content: space-between;
+    }
+}
