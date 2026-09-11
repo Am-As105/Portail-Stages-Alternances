@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publier une offre - Portail Stages</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/deposer.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="logo">
+                Portail Stages
+            </div>
+            <nav class="main-nav" aria-label="Navigation principale">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="index.html">Offres</a></li>
+                    <li><a href="offres-suivies.html">Mes offres suivies</a></li>
+                </ul>
+            </nav>
+            <a href="deposer-offre.html" class="btn btn-primary active" aria-current="page">Publier une offre</a>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            
+            <h1 class="page-title">Publier une offre</h1>
+
+            <div class="form-card">
+                <form action="#" method="POST">
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label" for="company">Nom de l'entreprise *</label>
+                            <input class="form-control" type="text" id="company" placeholder="ex. Nexalab" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="title">Titre du poste *</label>
+                            <input class="form-control" type="text" id="title" placeholder="ex. Développeur Front-End" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label" for="city">Ville *</label>
+                            <input class="form-control" type="text" id="city" placeholder="ex. Paris" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="contract">Type de contrat *</label>
+                            <div class="select-wrapper">
+                                <select class="form-control" id="contract" required>
+                                    <option value="" disabled selected>Sélectionner...</option>
+                                    <option value="Stage">Stage</option>
+                                    <option value="Alternance">Alternance</option>
+                                </select>
+                                <svg class="select-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="technologies">Technologies</label>
+                        <input class="form-control" type="text" id="technologies" placeholder="ex. React, TypeScript, Figma">
+                        <span class="form-text">Séparez les technologies par des virgules</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="description">Description de la mission *</label>
+                        <textarea class="form-control" id="description" placeholder="Décrivez le contexte, les responsabilités et l'environnement de travail..." required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="profile">Profil recherché</label>
+                        <textarea class="form-control" id="profile" placeholder="Formation, compétences, qualités recherchées..."></textarea>
+                    </div>
+
+                    <div class="form-group form-group-label-only">
+                        <label class="form-label">Contact ou lien de candidature</label>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <rect width="24" height="24" rx="4" fill="#0F172A"/>
+                            <path d="M7 16L12 9L17 16" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        Portail Stages
+                    </div>
+                    <p class="footer-desc">
+                        La plateforme de référence pour les offres de stage et d'alternance.
+                    </p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <nav aria-label="Menu pied de page">
+                        <ul>
+                            <li><a href="index.html">Accueil</a></li>
+                            <li><a href="index.html">Offres</a></li>
+                            <li><a href="#">Entreprises</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Légal</h4>
+                    <nav aria-label="Liens légaux">
+                        <ul>
+                            <li><a href="#">Conditions d'utilisation</a></li>
+                            <li><a href="#">Politique de confidentialité</a></li>
+                            <li><a href="#">Mentions légales</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Portail Stages — Tous droits réservés</p>
+                <p>Stage & Alternance &middot; France</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
