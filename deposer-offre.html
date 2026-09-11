@@ -25,6 +25,13 @@
                 </ul>
             </nav>
             <a href="deposer-offre.html" class="btn btn-primary active" aria-current="page">Publier une offre</a>
+            <button class="mobile-menu-btn" aria-label="Menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
         </div>
     </header>
 
@@ -56,7 +63,7 @@
                             <label class="form-label" for="contract">Type de contrat *</label>
                             <div class="select-wrapper">
                                 <select class="form-control" id="contract" required>
-                                    <option value="" disabled selected>Sélectionner...</option>
+                                    <option value="" disabled selected>Choisir...</option>
                                     <option value="Stage">Stage</option>
                                     <option value="Alternance">Alternance</option>
                                 </select>
@@ -81,9 +88,12 @@
                         <textarea class="form-control" id="profile" placeholder="Formation, compétences, qualités recherchées..."></textarea>
                     </div>
 
-                    <div class="form-group form-group-label-only">
-                        <label class="form-label">Contact ou lien de candidature</label>
+                    <div class="form-group">
+                        <label class="form-label" for="contact">Contact ou lien de candidature</label>
+                        <input class="form-control" type="text" id="contact" placeholder="email ou URL" required>
                     </div>
+
+                    <button type="submit" class="btn btn-full btn-black">Publier l'offre</button>
 
                 </form>
             </div>
