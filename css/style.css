@@ -643,7 +643,7 @@ input {
 
 @media (max-width: 768px) {
  .main-nav,
- .site-header > .btn-primary {
+ .header-inner > .btn-primary {
  display: none;
  }
 
@@ -719,4 +719,5 @@ input {
         display: none !important;
     }
 }
+
 
