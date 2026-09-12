@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -52,7 +52,8 @@
                                 <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
                             </svg>
                             <label for="main-search" class="sr-only" style="position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); border:0;">Recherche</label>
-                            <input type="text" id="main-search" name="q" placeholder="Métier, entreprise, mot-clé...">
+                            <input type="text" id="main-search-desktop" class="hide-on-mobile" name="q" placeholder="Métier, entreprise, mot-clé..." style="border:none;background:transparent;width:100%;outline:none;padding:8px;">
+                            <input type="text" id="main-search-mobile" class="hide-on-desktop" name="q_mobile" placeholder="Métier, mot-clé..." style="border:none;background:transparent;width:100%;outline:none;padding:8px;" disabled>
                         </div>
                         <button type="submit" class="btn btn-primary">Rechercher</button>
                     </form>
@@ -81,8 +82,10 @@
                 </div>
 
                 <div class="hero-right">
-                    <h1>Trouve ton stage ou alternance idéale</h1>
-                    <p>Des offres pour étudiants et jeunes diplômés</p>
+                    <h1 class="hide-on-mobile">Trouve ton<br><span class="highlight-underline">stage idéal</span></h1>
+                    <h1 class="hide-on-desktop">Trouve ton stage ou alternance idéale</h1>
+                    <p class="hide-on-mobile">Des milliers d'offres de stage et d'alternance pour étudiants et jeunes diplômés. Filtrez, candidatez, décrochez.</p>
+                    <p class="hide-on-desktop">Des offres pour étudiants et jeunes diplômés</p>
                 </div>
 
             </div>
@@ -92,15 +95,15 @@
             <div class="container filters-inner">
                 <div class="filters-group">
                     <button class="filter-btn">
-                        Toutes les villes
+                        <span class="hide-on-mobile">Toutes les villes</span><span class="hide-on-desktop">Ville</span>
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
                     </button>
                     <button class="filter-btn">
-                        Toutes les technos
+                        <span class="hide-on-mobile">Toutes les technos</span><span class="hide-on-desktop">Technologie</span>
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
                     </button>
                     <button class="filter-btn">
-                        Tous les contrats
+                        <span class="hide-on-mobile">Tous les contrats</span><span class="hide-on-desktop">Contrat</span>
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
                     </button>
                 </div>
@@ -293,3 +296,4 @@
 
 </body>
 </html>
+
